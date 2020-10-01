@@ -2,7 +2,7 @@ function displaymain() {
 
     let list = "";
     for (let i = 0; i < booklist.length; i++) {
-        list += booklist[i]['image'] + '<br>';
+        list +=`<img height="100px" width="100px" src="${booklist[i]['image']}">`  + '<br>';
         list += 'Name: ' + booklist[i]['name'] + '<br>';
         list += 'Price: ' + booklist[i]['price'] + '<br>';
         list += 'Quantity:' + booklist[i]['quantity'] + '<br>';
