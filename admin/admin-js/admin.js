@@ -1,5 +1,6 @@
 let booklist = loadData();
 let current = 1;
+
 function display() {
     let elm = document.getElementById('table-render');
     let html = '';
@@ -16,8 +17,8 @@ function addBook() {
     let quantity = document.getElementById('quantity').value;
     let image = document.getElementById('image').value;
     let author = document.getElementById('author').value;
-    if (name === "" || price === "" || image === ""){
-        alert('Không để name hoặc price hoặc image rỗng ')
+    if (name === "" || price === "" || image === "") {
+        alert('Name or Price or Quantity cannot be left blank')
         return;
     }
     let book = new Book(name, price, image, author, quantity);
@@ -28,13 +29,13 @@ function addBook() {
     saveData();
 }
 
-function deleteBook(index){
-    booklist.splice(index,1);
+function deleteBook(index) {
+    booklist.splice(index, 1);
     display();
     saveData();
 }
 
-function editBook(index){
+function editBook(index) {
     document.getElementById("edit-name").value = booklist[index].name;
     document.getElementById("edit-price").value = booklist[index].price;
     document.getElementById("edit-quantity").value = booklist[index].quantity;
@@ -43,7 +44,7 @@ function editBook(index){
     current = index;
 }
 
-function updateBook(){
+function updateBook() {
     let index = current;
     booklist[index].name = document.getElementById("edit-name").value;
     booklist[index].price = document.getElementById("edit-price").value;
@@ -57,32 +58,33 @@ function updateBook(){
 
 function revert2() {
     document.getElementById('edit-name').value = ''
-    document.getElementById('edit-price').value =''
-    document.getElementById('edit-quantity').value =''
-    document.getElementById('edit-image').value =''
-    document.getElementById('edit-author').value =''
+    document.getElementById('edit-price').value = ''
+    document.getElementById('edit-quantity').value = ''
+    document.getElementById('edit-image').value = ''
+    document.getElementById('edit-author').value = ''
 }
 
 
-function revert(){
+function revert() {
     document.getElementById('name').value = ''
-    document.getElementById('price').value =''
-    document.getElementById('quantity').value =''
-    document.getElementById('image').value =''
-    document.getElementById('author').value =''
+    document.getElementById('price').value = ''
+    document.getElementById('quantity').value = ''
+    document.getElementById('image').value = ''
+    document.getElementById('author').value = ''
 }
 
 function saveData() {
-    window.localStorage.setItem('books',JSON.stringify(booklist));
+    window.localStorage.setItem('books', JSON.stringify(booklist));
 }
 
 function loadData() {
-    let arr = localStorage.hasOwnProperty('books') ? JSON.parse(localStorage.getItem('books')): [];
+    let arr = localStorage.hasOwnProperty('books') ? JSON.parse(localStorage.getItem('books')) : [];
     let objs = [];
     for (let i = 0; i < arr.length; i++) {
-        let book = new Book(arr[i]["name"],arr[i]["price"],arr[i]["image"],arr[i]["author"],arr[i]["quantity"]);
+        let book = new Book(arr[i]["name"], arr[i]["price"], arr[i]["image"], arr[i]["author"], arr[i]["quantity"]);
         objs.push(book);
     }
     return objs;
 }
+
 display();

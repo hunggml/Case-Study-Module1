@@ -1,16 +1,16 @@
 function displaymain() {
-    let str =`<div class="card">
-  <img width="100px"  height="auto" src="${this.image}">
-           <td>${this.name}
-           <td>${this.price}</td>
-           <td>${this.quantity}</td>
-           <td>${this.author}</td><br>
-           <button>Add Book</button></p>
-</div>`;
+
     let list = "";
     for (let i = 0; i < booklist.length; i++) {
-        list+=str;
+        list += booklist[i]['image'] + '<br>';
+        list += 'Name: ' + booklist[i]['name'] + '<br>';
+        list += 'Price: ' + booklist[i]['price'] + '<br>';
+        list += 'Quantity:' + booklist[i]['quantity'] + '<br>';
+        list += 'Author: ' + booklist[i]['author'] + '<br>';
+        list += '<button>Add Book</button>' + '<br>' + '<br>'
+
     }
     document.getElementById("main").innerHTML = list;
 }
+
 displaymain();
