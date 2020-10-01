@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books Management</title>
+    <link rel="stylesheet" href="../admin-css/admin.css">
+
+
+
+</head>
+<body>
+<a style="color: white" href="http://localhost:63342/Case-Study-Module1/home/Home.html?_ijt=sclctkeas2rfjb2v8g6mj15qrk" target="_blank">Home User</a>
+<form>
+    <fieldset>
+        <h1>Book Information </h1>
+        <input type="text" id="name" placeholder="Name Book"><br><br>
+        <input type="text" id="price" placeholder="Price"><br><br>
+        <input type="number" id="quantity" placeholder="Quantity"><br><br>
+        <input type="text" id="image" placeholder="Image"><br><br>
+        <input type="text" id="author" placeholder="Author"><br><br>
+        <button type="button" onclick="addBook()">ADD</button>
+    </fieldset>
+</form>
+
+<form>
+    <fieldset>
+        <h1>Book Information Update </h1>
+        <input type="text" id="edit-name" placeholder="Name Book"><br><br>
+        <input type="text" id="edit-price" placeholder="Price"><br><br>
+        <input type="number" id="edit-quantity" placeholder="Quantity"><br><br>
+        <input type="text" id="edit-image" placeholder="Image"><br><br>
+        <input type="text" id="edit-author" placeholder="Author"><br><br>
+        <button type="button" onclick="updateBook()">Update</button>
+    </fieldset>
+</form>
+
+<br><br>
+<br><br>
+
+<table id="table3">
+    <tr>
+        <th>STT</th>
+        <th>IMAGE</th>
+        <th>NAME</th>
+        <th>PRICE(USD)</th>
+        <th>QUANTITY</th>
+        <th>AUTHOR</th>
+        <th colspan="2">ACTION</th>
+    </tr>
+    <tbody id="table-render">
+    </tbody>
+</table>
+<script src="../main-js/book.js"></script>
+<script src="../main-js/main.js"></script>
+</body>
+</html>
