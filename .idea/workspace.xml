@@ -26,8 +26,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/admin" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/admin" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -38,7 +38,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601522564213</updated>
-      <workItem from="1601522565232" duration="4833000" />
+      <workItem from="1601522565232" duration="5437000" />
     </task>
     <servers />
   </component>
