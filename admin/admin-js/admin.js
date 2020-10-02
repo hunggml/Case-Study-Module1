@@ -11,6 +11,11 @@ function loadData() {
     return objs;
 }
 
+function saveData() {
+    window.localStorage.setItem('books', JSON.stringify(booklist));
+}
+
+
 function display() {
     let elm = document.getElementById('table-render');
     let html = '';
@@ -82,9 +87,6 @@ function revert() {
     document.getElementById('author').value = ''
 }
 
-function saveData() {
-    window.localStorage.setItem('books', JSON.stringify(booklist));
-}
 
 
 
