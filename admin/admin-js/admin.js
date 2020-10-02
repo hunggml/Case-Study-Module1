@@ -1,6 +1,12 @@
 let booklist = loadData();
 let current = 1;
 
+
+function saveData() {
+    window.localStorage.setItem('books', JSON.stringify(booklist));
+}
+
+
 function loadData() {
     let arr = localStorage.hasOwnProperty('books') ? JSON.parse(localStorage.getItem('books')) : [];
     let objs = [];
@@ -9,10 +15,6 @@ function loadData() {
         objs.push(book);
     }
     return objs;
-}
-
-function saveData() {
-    window.localStorage.setItem('books', JSON.stringify(booklist));
 }
 
 
@@ -86,8 +88,6 @@ function revert() {
     document.getElementById('image').value = ''
     document.getElementById('author').value = ''
 }
-
-
 
 
 display();

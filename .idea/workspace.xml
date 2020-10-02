@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dbe593c-a88e-46c0-bc68-31ddc71fe18f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin-css/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-css/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin-js/admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-js/admin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin-js/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-js/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/Home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="0dbe593c-a88e-46c0-bc68-31ddc71fe18f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +67,7 @@
       <workItem from="1601548915258" duration="23000" />
       <workItem from="1601548945664" duration="14000" />
       <workItem from="1601557527957" duration="569000" />
-      <workItem from="1601600402066" duration="2214000" />
+      <workItem from="1601600402066" duration="2482000" />
     </task>
     <servers />
   </component>
