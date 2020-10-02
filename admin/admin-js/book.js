@@ -11,7 +11,7 @@ function Book(name, price, image, author, quantity) {
         return `
 <tr>
            <td>${this.id + 1}</td>
-           <td><img width="100px" alt="book" , height="auto" src="${this.image}"> </td>
+           <td><img width="100px" alt="book" height="auto" src="${this.image}"> </td>
            <td>${this.name}</td>
            <td>${this.price}</td>
            <td>${this.quantity}</td>

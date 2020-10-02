@@ -1,6 +1,16 @@
 let booklist = loadData();
 let current = 1;
 
+function loadData() {
+    let arr = localStorage.hasOwnProperty('books') ? JSON.parse(localStorage.getItem('books')) : [];
+    let objs = [];
+    for (let i = 0; i < arr.length; i++) {
+        let book = new Book(arr[i]["name"], arr[i]["price"], arr[i]["image"], arr[i]["author"], arr[i]["quantity"]);
+        objs.push(book);
+    }
+    return objs;
+}
+
 function display() {
     let elm = document.getElementById('table-render');
     let html = '';
@@ -23,7 +33,6 @@ function addBook() {
     }
     let book = new Book(name, price, image, author, quantity);
     booklist.push(book);
-    console.log(booklist);
     display();
     revert();
     saveData();
@@ -77,14 +86,6 @@ function saveData() {
     window.localStorage.setItem('books', JSON.stringify(booklist));
 }
 
-function loadData() {
-    let arr = localStorage.hasOwnProperty('books') ? JSON.parse(localStorage.getItem('books')) : [];
-    let objs = [];
-    for (let i = 0; i < arr.length; i++) {
-        let book = new Book(arr[i]["name"], arr[i]["price"], arr[i]["image"], arr[i]["author"], arr[i]["quantity"]);
-        objs.push(book);
-    }
-    return objs;
-}
+
 
 display();

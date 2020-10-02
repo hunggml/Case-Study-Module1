@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Books Management</title>
+    <title>BOOKS MANAGER  </title>
     <link rel="stylesheet" href="admin/admin-css/admin.css">
 </head>
 <body>
@@ -10,11 +10,11 @@
 <form>
     <fieldset>
         <h1>Book Information </h1>
-        <input type="text" id="name" placeholder="Name Book"><br><br>
-        <input type="text" id="price" placeholder="Price"><br><br>
-        <input type="number" id="quantity" placeholder="Quantity"><br><br>
-        <input type="text" id="image" placeholder="Image"><br><br>
-        <input type="text" id="author" placeholder="Author"><br><br>
+        <label for="name"></label><input type="text" id="name" placeholder="Name Book"><br><br>
+        <label for="price"></label><input type="text" id="price" placeholder="Price"><br><br>
+        <label for="quantity"></label><input type="number" id="quantity" placeholder="Quantity"><br><br>
+        <label for="image"></label><input type="text" id="image" placeholder="Image"><br><br>
+        <label for="author"></label><input type="text" id="author" placeholder="Author"><br><br>
         <button type="button" onclick="addBook()">ADD</button>
     </fieldset>
 </form>
@@ -22,11 +22,11 @@
 <form>
     <fieldset>
         <h1>Book Information Update </h1>
-        <input type="text" id="edit-name" placeholder="Name Book"><br><br>
-        <input type="text" id="edit-price" placeholder="Price"><br><br>
-        <input type="number" id="edit-quantity" placeholder="Quantity"><br><br>
-        <input type="text" id="edit-image" placeholder="Image"><br><br>
-        <input type="text" id="edit-author" placeholder="Author"><br><br>
+        <label for="edit-name"></label><input type="text" id="edit-name" placeholder="Name Book"><br><br>
+        <label for="edit-price"></label><input type="text" id="edit-price" placeholder="Price"><br><br>
+        <label for="edit-quantity"></label><input type="number" id="edit-quantity" placeholder="Quantity"><br><br>
+        <label for="edit-image"></label><input type="text" id="edit-image" placeholder="Image"><br><br>
+        <label for="edit-author"></label><input type="text" id="edit-author" placeholder="Author"><br><br>
         <button type="button" onclick="updateBook()">Update</button>
     </fieldset>
 </form>
